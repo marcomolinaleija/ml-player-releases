@@ -1,0 +1,34 @@
+name: Solicitud de Característica
+description: Sugerencia de nuevas funcionalidades o mejoras a las existentes en ML-Player.
+title: "[CARACTERÍSTICA]: "
+labels: "enhancement"
+assignees: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por proponer una nueva característica o mejora. Por favor, describe tu idea con el mayor detalle posible.
+  - type: textarea
+    id: feature_proposal
+    attributes:
+      label: Característica o Mejora Propuesta
+      description: Describe claramente la funcionalidad o mejora que te gustaría ver en ML-Player.
+      placeholder: Me gustaría que ML-Player pudiera...
+    validations:
+      required: true
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justificación
+      description: Explica el problema o la limitación actual que esta nueva característica resolvería. ¿Cómo mejoraría la experiencia del usuario o el flujo de trabajo actual?
+      placeholder: Esta característica resolvería el problema de...
+    validations:
+      required: true
+  - type: textarea
+    id: suggested_solution
+    attributes:
+      label: Solución Sugerida
+      description: Si tienes alguna idea sobre cómo debería implementarse esto (Ej. un nuevo atajo de teclado, un menú específico, un formato de salida), descríbela aquí.
+      placeholder: Podría implementarse mediante...
+    validations:
+      required: false

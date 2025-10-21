@@ -1,0 +1,106 @@
+name: Reporte de Fallo de Software
+description: Utiliza esta plantilla para informar sobre errores, fallos o comportamientos incorrectos en ML-Player.
+title: "[FALLO]: "
+labels: "bug"
+assignees: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tomarte el tiempo de reportar un fallo. Por favor, proporciona la mayor cantidad de detalles posible.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del Fallo
+      description: Describe de manera concisa el comportamiento inesperado que has encontrado. Sé claro en lo que sucedió y lo que se esperaba que sucediera.
+      placeholder: Describe el fallo aquí...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Pasos para Reproducir
+      description: Proporciona los pasos exactos y secuenciales para que el fallo pueda ser replicado. La capacidad de replicar el error es fundamental para su solución.
+      placeholder: |
+        1. Abrir ML-Player
+        2. Ir a la sección X
+        3. Hacer clic en el botón Y
+        4. Observar el comportamiento Z
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Comportamiento Esperado
+      description: ¿Cuál era la acción o el resultado correcto que la aplicación debería haber mostrado?
+      placeholder: La aplicación debería haber hecho...
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Comportamiento Actual
+      description: ¿Qué hizo la aplicación? (Ej. Se cerró inesperadamente, no se mostró la ventana de diálogo, el audio se detuvo, el lector de pantalla no leyó el elemento).
+      placeholder: La aplicación hizo...
+    validations:
+      required: true
+  - type: input
+    id: ml_player_version
+    attributes:
+      label: Versión de ML-Player
+      description: Por favor, especifica la versión de ML-Player que estás utilizando (Ej. 1.1.0).
+      placeholder: 1.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema Operativo
+      description: ¿En qué sistema operativo estás experimentando el fallo?
+      options:
+        - Windows 10
+        - Windows 11
+        - Otro (especificar en descripción)
+    validations:
+      required: true
+  - type: dropdown
+    id: screen_reader
+    attributes:
+      label: Lector de Pantalla
+      description: ¿Qué lector de pantalla estás utilizando?
+      options:
+        - NVDA
+        - JAWS
+        - Narrador
+        - No aplica
+        - Otro (especificar en descripción)
+    validations:
+      required: true
+  - type: input
+    id: audio_output
+    attributes:
+      label: Salida de Audio Seleccionada
+      description: Nombre del dispositivo de salida de audio en la configuración de ML-Player.
+      placeholder: Altavoces (Realtek High Definition Audio)
+    validations:
+      required: false
+  - type: dropdown
+    id: installation_method
+    attributes:
+      label: Método de Instalación
+      description: ¿Cómo instalaste ML-Player?
+      options:
+        - Instalador
+        - Winget
+        - Portable
+        - Otro (especificar en descripción)
+    validations:
+      required: true
+  - type: textarea
+    id: error_logs
+    attributes:
+      label: Mensajes o Logs de Error
+      description: Si la aplicación generó algún mensaje de error o si puedes obtener el log de la consola, pégalo a continuación (utiliza un bloque de código).
+      render: shell
+    validations:
+      required: false
