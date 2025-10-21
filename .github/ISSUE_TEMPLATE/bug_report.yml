@@ -2,7 +2,6 @@ name: Reporte de Fallo de Software
 description: Utiliza esta plantilla para informar sobre errores, fallos o comportamientos incorrectos en ML-Player.
 title: "[FALLO]: "
 labels: "bug"
-assignees: ""
 body:
   - type: markdown
     attributes:
