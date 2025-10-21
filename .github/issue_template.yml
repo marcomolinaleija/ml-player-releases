@@ -7,7 +7,7 @@ contact_links:
 issue_templates:
   - name: Reporte de Fallo de Software (Bug)
     description: Reporta un error, un comportamiento inesperado o un problema de accesibilidad.
-    link: .github/bug_report.md
+    link: .github/ISSUE_TEMPLATE/bug_report.md
   - name: Solicitud de Característica
     description: Propón una idea para una nueva función o una mejora al reproductor ML-Player.
-    link: .github/feature_request.md
+    link: .github/ISSUE_TEMPLATE/feature_request.md
