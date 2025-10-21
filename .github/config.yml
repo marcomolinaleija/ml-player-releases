@@ -3,11 +3,3 @@ contact_links:
   - name: Soporte y Preguntas Generales
     url: https://web.marco-ml.com/contacto
     about: Por favor, utiliza el canal de soporte para preguntas que no sean reportes de fallos o solicitudes de características.
-
-issue_templates:
-  - name: Reporte de Fallo de Software (Bug)
-    description: Reporta un error, un comportamiento inesperado o un problema de accesibilidad.
-    link: .github/ISSUE_TEMPLATE/bug_report.yml
-  - name: Solicitud de Característica
-    description: Propón una idea para una nueva función o una mejora al reproductor ML-Player.
-    link: .github/ISSUE_TEMPLATE/feature_request.yml
